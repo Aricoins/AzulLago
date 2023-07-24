@@ -750,3 +750,10 @@ color:white;
  #copos{
     background-color: red;
  }
+ #imgab{
+width: 300px;
+flex-direction: row;
+    border-radius: 20%;
+   padding: 5px;
+   
+ }
