@@ -1,7 +1,7 @@
 /********** Template CSS **********/
 :root {
     --primary: #424bab;
-    --light: #F5F5F5;
+    --light: #0575ad;
     --dark: #353535;
 }
 .m-0 {
@@ -293,7 +293,7 @@
 
 /*** About ***/
 @media (min-width: 992px) {
-    .container.about {
+    .se.about {
         max-width: 100% !important;
     }
 
@@ -636,7 +636,8 @@
 
 .img-fluid{
     opacity: 1;
-    height: 10%;
+    height: 100%;
+    width: 100%;
 }
 
 #dire{
@@ -739,4 +740,13 @@ color:white;
 
  #propóleo{
     grid-row-start: 2;
+ }
+
+ #subtitulo{
+
+    font-size: larger;
+ }
+
+ #copos{
+    background-color: red;
  }
