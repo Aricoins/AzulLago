@@ -528,7 +528,7 @@ iframe{
 /* Estilos para pantallas pequeñas */
 @media (max-width: 767px) {
     .portfolio-item {
-      margin-bottom: 20px; /* Agrega un margen inferior entre las tarjetas */
+      margin-bottom: 50px;/* Agrega un margen inferior entre las tarjetas */
     }
   }
   
