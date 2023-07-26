@@ -30,14 +30,20 @@
 
     <!-- Template Stylesheet -->
     <link href="style.css" rel="stylesheet">
+    <!-- <div class="d-flex justify-content-center">
+        <div class="spinner-border" role="status">
+          <span class="sr-only">Loading...</span>
+        </div>
+      </div> -->
 </head>
 
 <body>
     <!-- Spinner Start -->
-    <div class="spinner-grow text-primary" role="status">
-        <span class="sr-only">Loading...</span>
-      </div>
+    <!-- <div class="spinner-grow" style="width: 3rem; height: 3rem;" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div> -->
     <!-- Spinner End -->
+ 
 
 
     <!-- Topbar Start -->
@@ -169,42 +175,42 @@
     <!-- Feature Start -->
     <div id="iconos" class="container-xxl py-5">
         <div class="container">
-            <div class="row g-5">
-                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
+            <div class="row g-5" id="iconos">
+                <div id="icono" class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
                     <div class="d-flex align-items-center justify-content-between mb-2">
                         <div class="d-flex align-items-center justify-content-center bg-light" style="width: 60px; height: 60px;" id="iconos">
                             <i class="fa fa-user-check fa-2x text-secundary color:red"></i>
                         </div>
-                        <h1 class="display-1 text-light mb-0">AZUL</h1>
+                        <h1 id="textoi" class="display-1 text-light mb-0">AZUL</h1>
                     </div>
-                    <h5>Charlas</h5>
+                    <h5 id="textoi">Charlas</h5>
                 </div>
-                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
+                <div id="icono" class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
                     <div class="d-flex align-items-center justify-content-between mb-2">
-                        <div class="d-flex align-items-center justify-content-center bg-light color:red" style="width: 60px; height: 60px;">
+                        <div id="iconos" class="d-flex align-items-center justify-content-center bg-light color:red" style="width: 60px; height: 60px;">
                             <i class="fa fa-check fa-2x text-secundary color:blue"></i>
                         </div>
-                        <h1 class="display-1 text-light mb-0">LAGO</h1>
+                        <h1  id="textoi" class="display-1 text-light mb-0">LAGO</h1>
                     </div>
-                    <h5>Encuentros</h5>
+                    <h5 id="textoi">Encuentros</h5>
                 </div>
-                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
+                <div id="icono" class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
                     <div class="d-flex align-items-center justify-content-between mb-2">
-                        <div class="d-flex align-items-center justify-content-center bg-light color:blue" style="width: 60px; height: 60px;">
+                        <div id="iconos" class="d-flex align-items-center justify-content-center bg-light color:blue" style="width: 60px; height: 60px;">
                             <i class="fa fa-drafting-compass fa-2x text-secundary color: blue"></i>
                         </div>
-                        <h1 class="display-1 text-light mb-0">AZUL</h1>
+                        <h1 id="textoi" class="display-1 text-light mb-0">AZUL</h1>
                     </div>
-                    <h5>Capacitaciones</h5>
+                    <h5 id="textoi" >Capacitaciones</h5>
                 </div>
-                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
+                <div id="icono" class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
                     <div class="d-flex align-items-center justify-content-between mb-2">
-                        <div class="d-flex align-items-center justify-content-center bg-light" style="width: 60px; height: 60px;">
+                        <div id="iconos" class="d-flex align-items-center justify-content-center bg-light" style="width: 60px; height: 60px;">
                             <i class="fa fa-headphones fa-2x text-secundary color:yellow"></i>
                         </div>
-                        <h1 class="display-1 text-light mb-0">LAGO</h1>
+                        <h1  id="textoi" class="display-1 text-light mb-0">LAGO</h1>
                     </div>
-                    <h5>Intercambios</h5>
+                    <h5 id="textoi">Intercambios</h5>
                 </div>
             </div>
         </div>
@@ -226,7 +232,7 @@
                 <div class="col-lg-5 about-text py-5 wow fadeIn" data-wow-delay="0.5s">
                     <div class="p-lg-5 pe-lg-0">
                         <div class="section-title text-start">
-                            <h2>Nuestra cooperativa</h1>
+                            <h2>Nuestra organización</h1>
                         </div>
                         <p class="mb-4 pb-2">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo erat amet</p>
                         <div class="row g-4 mb-4 pb-2">
@@ -373,7 +379,7 @@
                             <h2>Por qué elegirnos</h2>
                         </div>
                         <p class="mb-4 pb-2">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo erat amet</p>
-                        <div class="row g-4">
+                        <div class="row g-4" id="xq">
                             <div class="col-6">
                                 <div class="d-flex align-items-center">
                                     <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white" style="width: 60px; height: 60px;">
@@ -386,7 +392,7 @@
                                 </div>
                             </div>
                             <div class="col-6">
-                                <div class="d-flex align-items-center">
+                                <div class="d-flex align-items-center" id="contador">
                                     <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white" style="width: 60px; height: 60px;">
                                         <i class="fa fa-user-check fa-2x text-secundary" style="color:blue"></i>
                                     </div>
@@ -442,14 +448,14 @@
             <div class="row mt-n2 wow fadeInUp" data-wow-delay="0.3s">
                 <div class="col-12 text-center">
                     <ul class="list-inline mb-5" id="portfolio-flters">
-                        <li class="mx-2 active" data-filter="*">Aromáticas</li>
+                        <li class="mx-2 active" data-filter=".ter">Aromáticas</li>
                         <li class="mx-2" data-filter=".first">Cosméticas</li>
                         <li class="mx-2" data-filter=".second">Medicinales</li>
                     </ul>
                 </div>
             </div>
             <div class="row g-6 portfolio-container">
-                <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-lg-4 col-md-6 portfolio-item ter wow fadeInUp" data-wow-delay="0.1s">
                     <div class="rounded overflow-hidden">
                         <div class="position-relative overflow-hidden">
                             <img class="img-fluid w-100" src="img/portfolio-1.jpg" alt="">
@@ -464,7 +470,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.3s">
+                <div class="col-lg-4 col-md-6 portfolio-item firs wow fadeInUp" data-wow-delay="0.3s">
                     <div class="rounded overflow-hidden">
                         <div class="position-relative overflow-hidden">
                             <img class="img-fluid w-100" src="img/portfolio-2.jpg" alt="">
@@ -479,7 +485,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.5s">
+                <div class="col-lg-4 col-md-6 portfolio-item ter wow fadeInUp" data-wow-delay="0.5s">
                     <div class="rounded overflow-hidden">
                         <div class="position-relative overflow-hidden">
                             <img class="img-fluid w-100" src="img/portfolio-3.jpg" alt="">
@@ -534,7 +540,7 @@
                             </div>
                         </div>
                         <div class="border border-5 border-light border-top-0 p-4">
-                            <p class="text-primary fw-medium mb-2" style="color:blueviolet">Medicinales</p>
+                            <p class="text-secundary fw-medium mb-2" style="color:blue">Medicinales</p>
                             <h5 class="lh-base mb-0">Asesoramiento sobre suelos y especies</a>
                         </div>
                     </div>
