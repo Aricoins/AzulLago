@@ -367,6 +367,7 @@
 
 .portfolio-item img {
     transition: .5s;
+    max-width: 90%;
 }
 
 .portfolio-item:hover img {
@@ -406,6 +407,7 @@
     .container.quote {
         max-width: 100% !important;
     }
+    
 
     .quote-text  {
         padding-right: calc(((100% - 960px) / 2) + .75rem);
