@@ -498,6 +498,10 @@
     }
 }
 
+iframe{
+    width: 50%;
+}
+
 .testimonial-carousel .owl-item .testimonial-text {
     border: 5px solid var(--light);
     transform: scale(.8);
