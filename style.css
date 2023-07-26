@@ -814,3 +814,16 @@ background-color: red;
       transform: none;
     }
   }
+  #nuestra{
+
+display: flex;
+flex-direction: row;
+align-content: center;
+
+  }
+  #img{
+
+    align-items: center;
+    justify-content: center;
+    margin-top: 20%;
+  }
