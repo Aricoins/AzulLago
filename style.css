@@ -525,7 +525,13 @@ iframe{
     transition: .5s;
     z-index: 1;
 }
-
+/* Estilos para pantallas pequeñas */
+@media (max-width: 767px) {
+    .portfolio-item {
+      margin-bottom: 20px; /* Agrega un margen inferior entre las tarjetas */
+    }
+  }
+  
 .testimonial-carousel:hover .owl-nav {
     width: 300px;
     opacity: 1;
