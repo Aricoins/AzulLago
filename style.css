@@ -841,6 +841,11 @@ align-content: center;
    
     
       }
+
+      #fotoredonda{
+
+        width: 100%
+      }
     }
   #img{
 
@@ -861,4 +866,9 @@ align-content: center;
         margin: 10px;
         flex-wrap: wrap;
         padding: 3px;
+      }
+
+
+      h1{
+        font-size: medium;
       }
