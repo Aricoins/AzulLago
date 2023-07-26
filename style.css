@@ -640,14 +640,7 @@
     width: 100%;
 }
 
-#dire{
-color:white;
-    background-color: rgb(40, 181, 242);
-    font-size: smaller;
-    height: 60px;
-    padding: 2px;
-    flex-wrap: wrap;
-  }
+
 @media (max-width: 800px){
 
     
@@ -795,12 +788,15 @@ background-color: red;
     }
     
 #iconos{
-  font-size: 8px;
+  font-size: 10px;
 
 
 }
 #imgab{
     border-radius: 20%;
+}
+.mb-0{
+    font-size: 16px;
 }
 }
 
@@ -821,9 +817,35 @@ flex-direction: row;
 align-content: center;
 
   }
+  @media(max-width: 800px){
+
+  
+    #nuestra{
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+   
+    
+      }
+    }
   #img{
 
     align-items: center;
     justify-content: center;
     margin-top: 20%;
   }
+
+  .col-lg-5{
+    padding-left: 3%;
+    text-align: justify;
+  }
+  #dire{
+    color:white;
+        background-color: rgb(1, 36, 50);
+        font-size: 16px;
+        height: 80px;
+        margin: 10px;
+        flex-wrap: wrap;
+        padding: 3px;
+      }

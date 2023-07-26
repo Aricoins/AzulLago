@@ -38,11 +38,11 @@
 </head>
 
 <body>
-    <!-- Spinner Start -->
-    <!-- <div class="spinner-grow" style="width: 3rem; height: 3rem;" role="status">
-        <span class="visually-hidden">Loading...</span>
-      </div> -->
-    <!-- Spinner End -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-secundary" style="color:blue; width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
  
 
 
@@ -50,17 +50,14 @@
     <div class="container-fluid bg-light p-0" style="margin-top: 1px;">
         <div id="dire" class="row gx-0 d-none d-lg-flex" style="height: 100px;">
             <div class="col-lg-7 px-1 text-start">
-                <div class="h-100 d-inline-flex align-items-center py-3 me-4">
-                         <i>Las Mutisias 127 |<br/> 
-                            Frente al Skate Park | <br/>  
-                            Lago Puelo Chubut | ARG </i>
-                   
-                   <p class="mb-2"><i class="fa fa-envelope me-3"></i>azullagocoop@gmail.com.com</p>
-                   </small>
-                </div>
-                <div class="h-100 d-inline-flex align-items-center py-3">
-                    <small class="fa fa-phone-alt text-light me-2" style="height: 10px;margin-top: 0;"></small>
-                    <small>Lu | Mie |  Vi de 18 a 21 h</small>
+                <div class="h-100 d-inline-flex align-items-center">
+                         <i>Las Mutisias 127 | Frente al Skate Park |   
+                            Lago Puelo Chubut | ARG | 
+                          azullagocoop@gmail.com.com |</i>
+                                 </div>
+                <div class="align-items-center py-3">
+                    <small class="fa fa-phone-alt text-light me-2" style="color:blue;height: 10px;margin-top: 0;"></small>
+                    <small>Lu | Mie | Vi de 18 a 21 h</small>
                 </div>
             </div>
             <div class="col-lg-5 px-2 text-end">
@@ -377,7 +374,7 @@
                         <div class="section-title text-start">
                             <h2>Por qué elegirnos</h2>
                         </div>
-                        <p class="mb-4 pb-2">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo erat amet</p>
+                        <p class="mb-4 pb-2"style="text-align:justify">Elija Azul Lago Cooperativa por nuestra sinergia cooperativa, prácticas orgánicas y asesoramiento gratuito. Garantizamos satisfacción del cliente y un futuro más saludable. ¡Contáctenos ahora!</p>
                         <div class="row g-4" id="xq">
                             <div class="col-6">
                                 <div class="d-flex align-items-center">
@@ -469,7 +466,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 portfolio-item firs wow fadeInUp" data-wow-delay="0.3s">
+                <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.3s">
                     <div class="rounded overflow-hidden">
                         <div class="position-relative overflow-hidden">
                             <img class="img-fluid w-100" src="img/portfolio-2.jpg" alt="">
@@ -499,7 +496,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.1s">
+                <div  class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.1s">
                     <div class="rounded overflow-hidden">
                         <div class="position-relative overflow-hidden">
                             <img class="img-fluid w-100" src="img/portfolio-4.jpg" alt="">
@@ -525,7 +522,7 @@
                         </div>
                         <div class="border border-5 border-light border-top-0 p-4">
                             <p class="text-secundary fw-medium mb-2" style="color:blue">Cosmética</p>
-                            <h5 class="lh-base mb-0">Testeo y dirección técnica para la elaboración de subproductos</a>
+                            <h5  class="lh-base mb-0">Testeo y dirección técnica para la elaboración de subproductos</a>
                         </div>
                     </div>
                 </div>
@@ -556,8 +553,7 @@
             <div class="row g-0 mx-lg-0">
                 <div class="col-lg-6 ps-lg-0" style="min-height: 400px;">
                     <div class="position-relative h-100">
-                        <img class="position-absolute img-fluid w-100 h-100" src="img/quote.jpg" style="object-fit: cover;" alt="">
-                    </div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d753.8443041573546!2d-71.59752933556456!3d-42.05972553261902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses-419!2sar!4v1690387292795!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
                 </div>
                 <div class="col-lg-6 quote-text py-5 wow fadeIn" data-wow-delay="0.5s">
                     <div class="p-lg-5 pe-lg-0">
@@ -684,7 +680,7 @@
     <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
         <div class="container">
             <div class="section-title text-center">
-                <h1 class="display-5 mb-5">Testimonios</h1>
+                <h2>Testimonios</h2>
             </div>
             <div class="owl-carousel testimonial-carousel">
                 <div class="testimonial-item text-center">
@@ -736,24 +732,25 @@
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-light mb-4">Empresas Socias</h4>
                     <a class="btn btn-link" href="https://ochopetalos.netlify.app/">Ocho Pétalos</a>
-                    <a class="btn btn-link" href="">Magma</a>
-                    <a class="btn btn-link" href="">Flora Sur</a>
-                    <a class="btn btn-link" href="">La mandrágora</a>
-                    <a class="btn btn-link" href="">Mellífera</a>
-                    <a class="btn btn-link" href="">Botánica andina</a>
-                    <a class="btn btn-link" href="">Mágica Pacha</a>
+                    <a class="btn btn-link" href="#ancla-1">Magma</a>
+                    <a class="btn btn-link" href="#ancla-1">Flora Sur</a>
+                    <a class="btn btn-link" href="#ancla-1">La mandrágora</a>
+                    <a class="btn btn-link" href="#ancla-1">Mellífera</a>
+                    <a class="btn btn-link" href="#ancla-1">Botánica andina</a>
+                    <a class="btn btn-link" href="#ancla-1">Mágica Pacha</a>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-light mb-4">Links rápidos</h4>
                     <a class="btn btn-link" href="">Acerca de</a>
-                    <a class="btn btn-link" href="#ancla-8">Contacto</a>
+                    <a class="btn btn-link" href="#ancla-4">Contacto</a>
                     <a class="btn btn-link" href="#ancla-1" >Empresas socias</a>
                     <a class="btn btn-link" href="">Términos y Condiciones</a>
-                    <a class="btn btn-link" href="">Soporte</a>
+                    <a class="btn btn-link" href="mailto:arielgarcia79@gmail.com?subject=Questions&body=Escribe aquí si tienes preguntas">Soporte</a>
+                   
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-light mb-4">Newsletter</h4>
-                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                    <p>¡Suscribete para recibir nuestras últimas noticias y novedades! ¡Unite ahora!.</p>
                     <div class="position-relative mx-auto" style="max-width: 400px;">
                         <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
                         <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
