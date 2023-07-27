@@ -870,4 +870,9 @@ align-content: center;
 @media(max-width: 700px){
       h1{
         font-size: medium;
-      } }
+      } 
+    
+    .mb-0{
+
+        font-size: 13px;
+    }}
