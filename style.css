@@ -290,6 +290,9 @@
     display: none;
 }
 
+#subtitulo{
+    font-size: medium;
+}
 
 /*** About ***/
 @media (min-width: 992px) {
@@ -643,7 +646,7 @@ iframe{
 } 
 .display-3{
 
-    font-size: 14px;
+    font-size: 22px;
 }
 
 .img-fluid{
