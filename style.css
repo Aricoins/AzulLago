@@ -370,7 +370,7 @@
 
 .portfolio-item img {
     transition: .5s;
-    max-width: 90%;
+    max-width: 100%;
 }
 
 .portfolio-item:hover img {
@@ -830,7 +830,7 @@ background-color: red;
 display: flex;
 flex-direction: row;
 align-content: center;
-
+width:100%
   }
   @media(max-width: 800px){
 
@@ -893,3 +893,9 @@ align-content: center;
         .portfolio-item {
             flex-basis: 100%;
         } }
+
+
+mb-4 {
+
+    width: 400px;
+}
