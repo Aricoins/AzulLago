@@ -290,6 +290,9 @@
     display: none;
 }
 
+#subtitulo{
+    font-size: large;
+}
 
 /*** About ***/
 @media (min-width: 992px) {
@@ -367,6 +370,7 @@
 
 .portfolio-item img {
     transition: .5s;
+    max-width: 100%;
 }
 
 .portfolio-item:hover img {
@@ -406,6 +410,7 @@
     .container.quote {
         max-width: 100% !important;
     }
+    
 
     .quote-text  {
         padding-right: calc(((100% - 960px) / 2) + .75rem);
@@ -498,6 +503,10 @@
     }
 }
 
+iframe{
+    width: 90%;
+}
+
 .testimonial-carousel .owl-item .testimonial-text {
     border: 5px solid var(--light);
     transform: scale(.8);
@@ -520,7 +529,13 @@
     transition: .5s;
     z-index: 1;
 }
-
+/* Estilos para pantallas pequeñas */
+@media (max-width: 767px) {
+    .portfolio-item {
+      margin-bottom: 50px;/* Agrega un margen inferior entre las tarjetas */
+    }
+  }
+  
 .testimonial-carousel:hover .owl-nav {
     width: 300px;
     opacity: 1;
@@ -631,7 +646,7 @@
 } 
 .display-3{
 
-    font-size: 14px;
+    font-size: 22px;
 }
 
 .img-fluid{
@@ -815,7 +830,7 @@ background-color: red;
 display: flex;
 flex-direction: row;
 align-content: center;
-
+width:100%
   }
   @media(max-width: 800px){
 
@@ -827,6 +842,11 @@ align-content: center;
     align-content: center;
    
     
+      }
+
+      #fotoredonda{
+
+        width: 100%
       }
     }
   #img{
@@ -849,3 +869,33 @@ align-content: center;
         flex-wrap: wrap;
         padding: 3px;
       }
+
+@media(max-width: 700px){
+      h1{
+        font-size: medium;
+      } 
+    
+    .mb-0{
+
+        font-size: 13px;
+    }}
+
+@media(max-width: 400px){
+      h1{
+        font-size: small;
+      } 
+    
+    .mb-0{
+
+        font-size: 10px;
+    }}
+    @media screen and (max-width: 400px) {
+        .portfolio-item {
+            flex-basis: 100%;
+        } }
+
+
+mb-4 {
+
+    width: 400px;
+}
