@@ -1,0 +1,52 @@
+html {
+  scroll-behavior: smooth; 
+}
+
+@media (max-width: 1250px) {
+    .responsiva{
+    max-width: 1200px
+    }
+}
+@media (max-width: 1200px ) {
+    .responsiva{
+    max-width: 1000px
+    }
+}
+@media (max-width: 768px: ) {
+    .responsiva{
+    max-width: 500px
+    }
+}
+@media (max-width: 480px ) {
+    .responsiva{
+    max-width: 300px
+    }
+}
+
+
+@keyframes animate-in-and-out {
+    entry 0% {
+      opacity: 0;
+      clip-path: inset(50% 0% 50% 0%);
+    }
+    entry 90% {
+      opacity: 1;
+      clip-path: inset(0% 0% 0% 0%);
+    }
+  
+    exit 10% {
+      opacity: 1;
+      clip-path: inset(0% 0% 0% 0%);
+    }
+    exit 100% {
+      opacity: 0;
+      clip-path: inset(50% 0% 50% 0%);
+    }
+  }
+  #galeria{
+    animation: animate-in-and-out both;
+    animation-duration: auto;
+    animation-timeline: view(inline);
+
+
+  }
