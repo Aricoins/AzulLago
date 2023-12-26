@@ -9,7 +9,7 @@
     <meta content="" name="description">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="img/about.png" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -367,7 +367,7 @@
                         </div>
                         <div class="p-4 text-center border border-5 border-light border-top-0">
                             <h4 class="mb-3">Mágica Pacha</h4>
-                            <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
+                            <p>La naturaleza misma... en tu ser. Terapias florales, cosmética,  homeopatía. Mas de 15 años de experiencia en medicina cannábica.</p>
                             <a class="fw-medium" href="">Leer más<i class="fa fa-arrow-right ms-2"></i></a>
                         </div>
                     </div>
@@ -586,7 +586,7 @@
                             <h2>Contáctenos</h2>
                         </div> </a> <br><br>
                         <p class="mb-4 pb-2">Contáctenos para más información sobre nuestros servicios y cómo podemos ayudarle. Use nuestras redes, teléfonos de contacto o complete el fomrulario y nos contactaremos en brece. ¡Esperamos su mensaje!</p>
-                        <form>
+                        <form id="form">
                             <div class="row g-3">
                                 <div class="col-12 col-sm-6">
                                     <input type="text" class="form-control border-0" placeholder="Nombre" style="height: 55px;">
@@ -609,10 +609,12 @@
                                     <textarea class="form-control border-0" placeholder="Tu consulta"></textarea>
                                 </div>
                                 <div class="col-12">
-                                    <button class="btn btn-primary w-100 py-3" type="submit">Enviar</button>
+                                    <button class="btn btn-primary w-100 py-3" type="submit" onclick="logsubmit()">Enviar</button>
                                 </div>
                             </div>
                         </form>
+                        <p id="log"></p>
+
                     </div>
                 </div>
             </div>
