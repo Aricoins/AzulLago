@@ -1,4 +1,10 @@
 /********** Template CSS **********/
+.banner{
+    background-color: yellow;
+    text-align: center;
+    color: black; 
+}
+
 :root {
     --primary: #424bab;
     --light: #0575ad;
