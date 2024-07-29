@@ -11,11 +11,17 @@
 .banner{
     background-color: var(--violeta);
     text-align: center;
-    color: "white"; 
+    color: white; 
     height: 50px;
     text-decoration: none;
     
 }
+
+.banner a {
+    color: inherit; /* Usa el color del contenedor padre */
+    text-decoration: none; /* Quita el subrayado del enlace */
+}
+
 
 .m-0 {
     color: var(--primary)
