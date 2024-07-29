@@ -11,8 +11,9 @@
 .banner{
     background-color: var(--violeta);
     text-align: center;
-    color: black; 
-    height: 40px
+    color: var(--light); 
+    height: 40px;
+    
 }
 
 .m-0 {
