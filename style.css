@@ -11,7 +11,7 @@
 .banner{
     background-color: var(--violeta);
     text-align: center;
-    color: var(--light); 
+    color: "white"; 
     height: 50px;
     
 }
