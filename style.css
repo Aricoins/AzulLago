@@ -1,16 +1,20 @@
 /********** Template CSS **********/
-.banner{
-    background-color: #88389;
-    text-align: center;
-    color: black; 
-    height: 40px
-}
 
 :root {
     --primary: #424bab;
     --light: #0575ad;
     --dark: #353535;
+    --violeta: #88389
 }
+
+
+.banner{
+    background-color: var(--violeta);
+    text-align: center;
+    color: black; 
+    height: 40px
+}
+
 .m-0 {
     color: var(--primary)
 } 
