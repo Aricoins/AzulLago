@@ -1,8 +1,9 @@
 /********** Template CSS **********/
 .banner{
-    background-color: yellow;
+    background-color: #88389;
     text-align: center;
     color: black; 
+    height: 40px
 }
 
 :root {
