@@ -591,33 +591,34 @@
                             <h2>Contáctenos</h2>
                         </div> </a> <br><br>
                         <p class="mb-4 pb-2">Contáctenos para más información sobre nuestros servicios y cómo podemos ayudarle. Use nuestras redes, teléfonos de contacto o complete el fomrulario y nos contactaremos en brece. ¡Esperamos su mensaje!</p>
-                        <form id="form">
-                            <div class="row g-3">
-                                <div class="col-12 col-sm-6">
-                                    <input type="text" class="form-control border-0" placeholder="Nombre" style="height: 55px;">
-                                </div>
-                                <div class="col-12 col-sm-6">
-                                    <input type="email" class="form-control border-0" placeholder="Correo electrónico" style="height: 55px;">
-                                </div>
-                                <div class="col-12 col-sm-6">
-                                    <input type="text" class="form-control border-0" placeholder="Celular" style="height: 55px;">
-                                </div>
-                                <div class="col-12 col-sm-6">
-                                    <select class="form-select border-0" style="height: 55px;">
-                                        <option selected>Eliga un servicio</option>
-                                        <option value="1">Aromáticas</option>
-                                        <option value="2">Cosméticas</option>
-                                        <option value="3">Medicinales</option>
-                                    </select>
-                                </div>
-                                <div class="col-12">
-                                    <textarea class="form-control border-0" placeholder="Tu consulta"></textarea>
-                                </div>
-                                <div class="col-12">
-                                    <button class="btn btn-primary w-100 py-3" type="submit" onclick="logsubmit()">Enviar</button>
-                                </div>
-                            </div>
-                        </form>
+                       <form id="contact-form" action="https://formspree.io/f/xvgpqvoa" method="post">
+    <div class="row g-3">
+        <div class="col-12 col-sm-6">
+            <input type="text" name="name" class="form-control border-0" placeholder="Nombre" style="height: 55px;" required>
+        </div>
+        <div class="col-12 col-sm-6">
+            <input type="email" name="email" class="form-control border-0" placeholder="Correo electrónico" style="height: 55px;" required>
+        </div>
+        <div class="col-12 col-sm-6">
+            <input type="tel" name="phone" class="form-control border-0" placeholder="Celular" style="height: 55px;" required>
+        </div>
+        <div class="col-12 col-sm-6">
+            <select name="service" class="form-select border-0" style="height: 55px;" required>
+                <option value="" disabled selected>Elija un servicio</option>
+                <option value="1">Aromáticas</option>
+                <option value="2">Cosméticas</option>
+                <option value="3">Medicinales</option>
+            </select>
+        </div>
+        <div class="col-12">
+            <textarea name="message" class="form-control border-0" placeholder="Tu consulta" required></textarea>
+        </div>
+        <div class="col-12">
+            <button class="btn btn-primary w-100 py-3" type="submit">Enviar</button>
+        </div>
+    </div>
+</form>
+
                         <p id="log"></p>
 
                     </div>
