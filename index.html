@@ -575,14 +575,15 @@
 
 
     <!-- Quote Start -->
-    <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
+    <div class="container-fluid bg-light overflow-hidden my-1 px-lg-0">
         <div class="container quote px-lg-0">
             <div class="row g-0 mx-lg-0">
                 <div class="col-lg-6 ps-lg-0" style="min-height: 400px;">
                     <div class="position-relative h-100">
-                                               <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d394.3879535185141!2d-71.59655135945339!3d-42.059284394281896!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses-419!2sar!4v1691157132895!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  </div>
+                 <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d394.3879535185141!2d-71.59655135945339!3d-42.059284394281896!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses-419!2sar!4v1691157132895!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  </div>
  </div>               <div class="col-lg-6 quote-text py-5 wow fadeIn" data-wow-delay="0.5s">
-                    <div class="p-lg-5 pe-lg-0">                        <a name="ancla-4">
+                    <div class="p-lg-5 pe-lg-0">         
+                        <a name="ancla-4">
                         <div > <h2>Contáctenos</h2>
                         </div> </a> <br><br>
                         <p class="mb-4 pb-2">Contáctenos para más información sobre nuestros servicios y cómo podemos ayudarle. Use nuestras redes, teléfonos de contacto o complete el fomrulario y nos contactaremos en brece. ¡Esperamos su mensaje!</p>
@@ -813,6 +814,14 @@
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="lib/isotope/isotope.pkgd.min.js"></script>
     <script src="lib/lightbox/js/lightbox.min.js"></script>
+     <script>
+    document.getElementById('contact-form').addEventListener('submit', function () {
+        // Resetea el formulario después de enviarlo
+        setTimeout(() => {
+            document.getElementById('contact-form').reset();
+        }, 1000); // Espera un segundo antes de resetear
+    });
+</script>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
