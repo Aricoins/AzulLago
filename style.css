@@ -922,7 +922,7 @@ mb-4 {
 /* Animación de latido suave */
 @keyframes latido {
     0% { transform: scale(1); }
-    50% { transform: scale(1.05); }
+    50% { transform: scale(1.2); }
     100% { transform: scale(1); }
 }
 
@@ -937,7 +937,7 @@ mb-4 {
 }
 
 .tienda-link:hover {
-    color: #0056b3; /* Color azul más oscuro al hover */
+    color: green; /* Color azul más oscuro al hover */
     text-shadow: 0 0 10px rgba(0, 123, 255, 0.3);
     animation-play-state: paused;
 }
