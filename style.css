@@ -919,3 +919,25 @@ mb-4 {
 
     width: 400px;
 }
+/* Animación de latido suave */
+@keyframes latido {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+/* Estilos para el enlace de tienda */
+.tienda-link {
+    animation: latido 3s ease-in-out infinite;
+    display: inline-block;
+    transition: all 0.3s ease;
+    color: #007bff; /* Color azul similar al usado en tu tema */
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.tienda-link:hover {
+    color: #0056b3; /* Color azul más oscuro al hover */
+    text-shadow: 0 0 10px rgba(0, 123, 255, 0.3);
+    animation-play-state: paused;
+}
