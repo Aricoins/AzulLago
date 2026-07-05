@@ -135,8 +135,8 @@
                     <h5>Newsletter</h5>
                     <p>Suscribite para recibir nuestras novedades.</p>
                     <div class="newsletter-form">
-                        <input type="email" class="form-control" placeholder="Tu correo electrónico">
-                        <button class="btn btn-primary">Enviar</button>
+                        <input type="email" id="newsletter-email" class="form-control" placeholder="Tu correo electrónico">
+                        <a href="mailto:azullagocoop@gmail.com?subject=Suscripci%C3%B3n%20al%20newsletter%20de%20Azul%20Lago&body=Hola%2C%20quiero%20suscribirme%20al%20newsletter.%20Mi%20email%20es%3A" class="btn btn-primary" onclick="document.getElementById('newsletter-email').value ? this.href='mailto:azullagocoop@gmail.com?subject=Suscripci%C3%B3n%20al%20newsletter%20de%20Azul%20Lago&body=Hola%2C%20quiero%20suscribirme%20al%20newsletter.%20Mi%20email%20es%3A%20' + encodeURIComponent(document.getElementById('newsletter-email').value) : this.href='mailto:azullagocoop@gmail.com?subject=Suscripci%C3%B3n%20al%20newsletter%20de%20Azul%20Lago'">Enviar</a>
                     </div>
                 </div>
             </div>
