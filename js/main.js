@@ -82,7 +82,7 @@
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('visible');
-                    if (entry.target.classList.contains('stat-number')) {
+                    if (entry.target.classList.contains('stat-card') || entry.target.classList.contains('stat-number')) {
                         animateCounters();
                     }
                 }
