@@ -1,217 +1,167 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
     <meta charset="utf-8">
-    <title>Azul Lago Cooperativa</title>
+    <title>Proyectos — Azul Lago Cooperativa</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
+    <meta content="cooperativa, proyectos, alcohol de cereal, biocoop" name="keywords">
+    <meta content="Conocé los proyectos de Azul Lago Cooperativa: Alcohol de Cereal, BioCoop y más iniciativas de fitobotánica." name="description">
 
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="img/about.png" rel="icon">
 
-    <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@500;700;900&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-
-    <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Template Stylesheet -->
-    <link href="anuncios.css" rel="stylesheet">
-    <!-- <div class="d-flex justify-content-center">
-        <div class="spinner-border" role="status">
-          <span class="sr-only">Loading...</span>
-        </div>
-      </div> -->
+    <link href="style.css" rel="stylesheet">
 </head>
-
 <body>
-    <!-- <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-grow text-secundary" style="color:blue; width: 3rem; height: 3rem;" role="status">
-            <span class="sr-only">Loading...</span>
-        </div>
-    </div> -->
- 
 
-
-    <!-- Topbar Start -->
-    <div class="container-fluid bg-light p-0 wow fadeIn" style="margin-top: 1px;">
-        <div id="dire" class="row gx-0 d-none d-lg-flex" style="height: 100px;">
-            <div class="col-lg-7 px-1 text-start">
-                <div class="h-100 d-inline-flex align-items-center">
-                         <i>Las Mutisias 127 | Frente al Skate Park |   
-                            Lago Puelo Chubut | ARG | 
-                          azullagocoop@gmail.com.com |</i>
-                                 </div>
-                <div class="align-items-center py-3">
-                    <small class="fa fa-phone-alt text-light me-2" style="color:blue;height: 10px;margin-top: 0;"></small>
-                    <small>Lu | Mie | Vi de 18 a 21 h</small>
-                </div>
+    <!-- ======= TOPBAR ======= -->
+    <div class="topbar">
+        <div class="container d-flex flex-wrap justify-content-between align-items-center">
+            <div class="topbar-info">
+                <i class="fa-regular fa-clock"></i>
+                <span>Lu · Mi · Vi de 18 a 21 h</span>
+                <span class="topbar-sep">|</span>
+                <i class="fa-regular fa-location-dot"></i>
+                <span>Las Mutisias 127, Lago Puelo</span>
             </div>
-            <div class="col-lg-5 px-2 text-end">
-                <div class="h-100 d-inline-flex align-items-center py-3 me-4">
-                    <small class="fa fa-phone-alt text-light me-2" style="height: 1px;"></small>
-                    <small>| 294 4245088 | 294 4598520</small>
-                </div>
-                <div class="h-100 d-inline-flex align-items-center">
-                    <a id="iconos" class="btn btn-sm-square bg-white text-secundary me-1" style="color:blue" href="https://www.facebook.com/groups/379567145498264/"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-sm-square bg-white text-secundary me-0" style="color:blue" href=""><i class="fab fa-instagram"></i></a>
-                </div>
+            <div class="topbar-contact">
+                <a href="tel:2944245088"><i class="fa-solid fa-phone"></i> 294 4245088</a>
+                <a href="mailto:azullagocoop@gmail.com"><i class="fa-regular fa-envelope"></i> azullagocoop@gmail.com</a>
+                <a href="https://www.facebook.com/groups/379567145498264/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/azul_lago_coop/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
             </div>
         </div>
     </div>
-    <!-- Topbar End -->
 
-
-    <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
-        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-            <h1 class="titulo"><img src="img/about.png"  alt="" style="height: 60px; "> Azul Lago Cooperativa </h1> 
-                <img src="" alt="">
-        </a>
-        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.html" class="nav-item nav-link active">Inicio</a>
-                <a href="index.html" class="nav-item nav-link">Nosotros</a>
-                <div class="nav-item dropdown">
-                    <a href="index.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Proyectos</a>
-                    <div class="dropdown-menu fade-up m-0">
-                        <a href="anuncios.html" class="dropdown-item">Alcohol de Cereal</a>
-                        <a href="index.html" class="dropdown-item">Otros proyectos</a></div>
-                       </div>
-                       </div> 
-                <div class="nav-item dropdown">
-                    <a href="https://azullago.netlify.app/" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Socias</a>
-                    <div class="dropdown-menu fade-up m-0">
-                        <a href="https://azullago.netlify.app/" class="dropdown-item">Magma</a>
-                        <a href="index.html" class="dropdown-item">Ocho Pétalos</a>
-                        <a href="#index.html" class="dropdown-item">Cosmética Anadina</a>
-                        <a href="#index.html" class="dropdown-item"> La Mandrágora</a>
-                        <a href="#index.html" class="dropdown-item"> Mágica Pacha</a>
-                        <a href="#index.html" class="dropdown-item"> Mellífera</a>
-                        <a href="404.html" class="dropdown-item"></a>
-                    </div>
-                </div>
-                <a href="#ancla-4" class="nav-item nav-link">Contacto</a>
-            </div>
-            </div>
-    </nav>
-    <!-- Navbar End -->
-
-
-    <!-- Carousel Start -->
-        <div  class="owl-carousel header-carousel position-relative wow fadeIn" data-wow-delay="0.2s">
-            <div  class="owl-carousel-item position-relative">
-                <img  class="responsiva"  src="img/image.jpg" href="https://azullago.netlify.app/" alt="imagen" style="height: auto">
-               </div>
-            <div class="owl-carousel-item position-relative">
-                <img  class="responsiva"src="img\Alcoholdecereal.jpeg" href="https://azullago.netlify.app/" alt="imagen" style="height: auto">
-                  
-                 </div>
-            <div class="owl-carousel-item position-relative">
-                <img  class="responsiva" src="img/image.jpg" href="https://azullago.netlify.app/" alt="imagen" style="height: auto">
-                
-            </div>
-        </div>
- 
-    <!-- Carousel End -->
-
-
-
-    <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-light footer mt-2 pt-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-light mb-4">Dónde estamos</h4>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Las Mutisias 127 | Frente al Skate Park | Lago Puelo | Chubut | ARG</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>294 4245088 | 294 4598520</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>azullagocoop@gmail.com.com</p>
-                    <div class="d-flex pt-2">
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-light mb-4">Empresas Socias</h4>
-                    <a class="btn btn-link" href="https://ochopetalos.netlify.app/">Ocho Pétalos</a>
-                    <a class="btn btn-link" href="#ancla-1">Magma</a>
-                    <a class="btn btn-link" href="#ancla-1">Flora Sur</a>
-                    <a class="btn btn-link" href="#ancla-1">La mandrágora</a>
-                    <a class="btn btn-link" href="#ancla-1">Mellífera</a>
-                    <a class="btn btn-link" href="#ancla-1">Botánica andina</a>
-                    <a class="btn btn-link" href="#ancla-1">Mágica Pacha</a>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-light mb-4">Links rápidos</h4>
-                    <a class="btn btn-link" href="">Acerca de</a>
-                    <a class="btn btn-link" href="#ancla-4">Contacto</a>
-                    <a class="btn btn-link" href="#ancla-1" >Empresas socias</a>
-                    <a class="btn btn-link" href="">Términos y Condiciones</a>
-                    <a class="btn btn-link" href="mailto:arielgarcia79@gmail.com?subject=Questions&body=Escribe aquí si tienes preguntas">Soporte</a>
-                   
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-light mb-4">Newsletter</h4>
-                    <p>¡Suscribete para recibir nuestras últimas noticias y novedades! ¡Unite ahora!.</p>
-                    <div class="position-relative mx-auto" style="max-width: 400px;">
-                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <!-- ======= NAVBAR ======= -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-nav">
         <div class="container">
-            <div class="copyright">
-                <div class="row">
-                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom" href="#">Azul Lago Cooperativa</a>, Todos los derechos reservados.
+            <a class="navbar-brand" href="index.html">
+                <img src="img/about.png" alt="Azul Lago" class="brand-logo">
+                <span class="brand-text">Azul Lago</span>
+                <small class="brand-sub">Cooperativa</small>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#nosotros">Nosotros</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" data-bs-toggle="dropdown">Proyectos</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="anuncios.html">Alcohol de Cereal</a></li>
+                            <li><a class="dropdown-item" href="anuncios.html">BioCoop</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contacto">Contacto</a></li>
+                </ul>
+                <a href="https://tienda.azullago.com" class="btn btn-tienda ms-3" target="_blank" rel="noopener">
+                    <i class="fa-solid fa-bag-shopping"></i> Tienda
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ======= PAGE HEADER ======= -->
+    <section class="section" style="padding-top: 60px; padding-bottom: 40px;">
+        <div class="container text-center">
+            <span class="section-badge">Proyectos</span>
+            <h1 class="section-title">Nuestros <span class="text-accent">proyectos</span></h1>
+            <p class="hero-desc" style="color: var(--neutral-700); margin: 0 auto;">Iniciativas de la cooperativa para el desarrollo sostenible de la fitobotánica regional.</p>
+        </div>
+    </section>
+
+    <!-- ======= CAROUSEL PROYECTOS ======= -->
+    <section class="section" style="padding-top: 0;">
+        <div class="container">
+            <div class="owl-carousel header-carousel position-relative">
+                <div class="position-relative">
+                    <img src="img/image.jpg" alt="Alcohol de Cereal" style="width:100%; height:auto; border-radius: var(--radius-md);">
+                </div>
+                <div class="position-relative">
+                    <img src="img/Alcoholdecereal.jpeg" alt="Alcohol de Cereal" style="width:100%; height:auto; border-radius: var(--radius-md);">
+                </div>
+                <div class="position-relative">
+                    <img src="img/image.jpg" alt="Proyecto BioCoop" style="width:100%; height:auto; border-radius: var(--radius-md);">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======= FOOTER ======= -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <div class="footer-brand">
+                        <img src="img/about.png" alt="Azul Lago">
+                        <h4>Azul Lago Cooperativa</h4>
                     </div>
-                    <div class="col-md-6 text-center text-md-end">
-                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                        Designed By <a class="border-bottom" href="https://g.dev/aegr">HTML Codex & AEGR</a>
+                    <p>Brindamos servicios a productores de plantas aromáticas, cosméticas y medicinales en Lago Puelo, Chubut, Argentina.</p>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/groups/379567145498264/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/azul_lago_coop/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5>Empresas Socias</h5>
+                    <ul class="footer-links">
+                        <li><a href="https://ochopetalos.mitiendanube.com/" target="_blank" rel="noopener">Ocho Pétalos</a></li>
+                        <li><a href="#">La Mandrágora</a></li>
+                        <li><a href="#">Mellífera</a></li>
+                        <li><a href="#">Mágica Pacha</a></li>
+                        <li><a href="#">Flora Azul</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5>Links rápidos</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="index.html#nosotros">Nosotros</a></li>
+                        <li><a href="index.html#contacto">Contacto</a></li>
+                        <li><a href="https://tienda.azullago.com" target="_blank" rel="noopener">Tienda Online</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <h5>Newsletter</h5>
+                    <p>Suscribite para recibir nuestras novedades.</p>
+                    <div class="newsletter-form">
+                        <input type="email" class="form-control" placeholder="Tu correo electrónico">
+                        <button class="btn btn-primary">Enviar</button>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Footer End -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        &copy; 2025 <a href="index.html">Azul Lago Cooperativa</a>. Todos los derechos reservados.
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        Diseño y desarrollo <a href="https://www.latitud42.tech/" target="_blank" rel="noopener">Latitud42.tech</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
+    <a href="#" class="back-to-top" id="backToTop" aria-label="Volver arriba">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
 
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-0 back-to-top"><i class="bi bi-arrow-up"></i></a>
-
-
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/isotope/isotope.pkgd.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
-
-    <!-- Template Javascript -->
     <script src="js/main.js"></script>
 </body>
-
 </html>

@@ -1,101 +1,120 @@
 (function ($) {
     "use strict";
 
-    // Spinner
-    var spinner = function () {
-        setTimeout(function () {
-            if ($('#spinner').length > 0) {
-                $('#spinner').removeClass('show');
-            }
-        }, 1);
-    };
-    spinner();
-    
-    
-    // Initiate the wowjs
-    new WOW().init();
-
+    const isHomePage = window.location.pathname === '/' || window.location.pathname.endsWith('index.html');
 
     // Sticky Navbar
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 300) {
-            $('.sticky-top').addClass('shadow-sm').css('top', '0px');
-        } else {
-            $('.sticky-top').removeClass('shadow-sm').css('top', '-100px');
+    function handleScroll() {
+        const nav = $('.sticky-nav');
+        const scrollY = $(this).scrollTop();
+        nav.toggleClass('scrolled', scrollY > 80);
+
+        const btn = $('#backToTop');
+        if (btn.length) {
+            btn.toggleClass('show', scrollY > 400);
         }
-    });
-    
-    
-    // Back to top button
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 300) {
-            $('.back-to-top').fadeIn('slow');
-        } else {
-            $('.back-to-top').fadeOut('slow');
-        }
-    });
-    $('.back-to-top').click(function () {
-        $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
-        return false;
+    }
+    $(window).on('scroll', handleScroll);
+
+    // Back to top
+    $('#backToTop').on('click', function (e) {
+        e.preventDefault();
+        $('html, body').animate({ scrollTop: 0 }, 800, 'easeOutExpo');
     });
 
+    // Hero carousel
+    if ($('.hero-carousel').length) {
+        $('.hero-carousel').owlCarousel({
+            items: 1,
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 6000,
+            smartSpeed: 1200,
+            dots: true,
+            nav: true,
+            navText: [
+                '<i class="fa-solid fa-chevron-left"></i>',
+                '<i class="fa-solid fa-chevron-right"></i>'
+            ]
+        });
+    }
 
-    // Facts counter
-    $('[data-toggle="counter-up"]').counterUp({
-        delay: 10,
-        time: 2000
-    });
+    // Header carousel (anuncios page)
+    if ($('.header-carousel').length) {
+        $('.header-carousel').owlCarousel({
+            items: 1,
+            loop: true,
+            autoplay: true,
+            smartSpeed: 1000,
+            dots: true,
+            nav: true,
+            navText: [
+                '<i class="fa-solid fa-chevron-left"></i>',
+                '<i class="fa-solid fa-chevron-right"></i>'
+            ]
+        });
+    }
 
-
-    // Header carousel
-    $(".header-carousel").owlCarousel({
-        autoplay: true,
-        smartSpeed: 1500,
-        items: 1,
-        dots: true,
-        loop: true,
-        nav : true,
-        navText : [
-            '<i class="bi bi-chevron-left"></i>',
-            '<i class="bi bi-chevron-right"></i>'
-        ]
-    });
-
-
-    // Testimonials carousel
-    $(".testimonial-carousel").owlCarousel({
-        autoplay: true,
-        smartSpeed: 1000,
-        center: true,
-        dots: false,
-        loop: true,
-        nav : true,
-        navText : [
-            '<i class="bi bi-arrow-left"></i>',
-            '<i class="bi bi-arrow-right"></i>'
-        ],
-        responsive: {
-            0:{
-                items:1
-            },
-            768:{
-                items:2
+    // Counter animation
+    function animateCounters() {
+        $('.stat-number').each(function () {
+            const $el = $(this);
+            const target = parseInt($el.data('count'));
+            if (target && !$el.hasClass('counted')) {
+                $el.addClass('counted');
+                let current = 0;
+                const step = Math.ceil(target / 60);
+                const timer = setInterval(function () {
+                    current += step;
+                    if (current >= target) {
+                        current = target;
+                        clearInterval(timer);
+                    }
+                    $el.text(current + '+');
+                }, 25);
             }
-        }
+        });
+    }
+
+    // Scroll-triggered animations with Intersection Observer
+    function initScrollAnimations() {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    if (entry.target.classList.contains('stat-number')) {
+                        animateCounters();
+                    }
+                }
+            });
+        }, { threshold: 0.2 });
+
+        document.querySelectorAll('.fade-up, .fade-in').forEach(el => observer.observe(el));
+    }
+
+    // Add animation classes to elements
+    function setupAnimations() {
+        $('.value-card, .service-card, .partner-card, .stat-card').each(function (i) {
+            $(this).addClass('fade-up');
+            $(this).css('transition-delay', (i * 0.08) + 's');
+        });
+        $('.section-title, .section-badge, .about-text, .about-image').addClass('fade-up');
+        $('.hero-title, .hero-tagline, .hero-desc').addClass('fade-in');
+    }
+
+    // Contact form feedback
+    $('#contact-form').on('submit', function () {
+        setTimeout(() => {
+            this.reset();
+        }, 1000);
     });
 
-
-    // Portfolio isotope and filter
-    var portfolioIsotope = $('.portfolio-container').isotope({
-        itemSelector: '.portfolio-item',
-        layoutMode: 'fitRows'
+    $(document).ready(function () {
+        setupAnimations();
+        initScrollAnimations();
+        setTimeout(function () {
+            $('.hero-title, .hero-tagline, .hero-desc').addClass('visible');
+        }, 200);
     });
-    $('#portfolio-flters li').on('click', function () {
-        $("#portfolio-flters li").removeClass('active');
-        $(this).addClass('active');
 
-        portfolioIsotope.isotope({filter: $(this).data('filter')});
-    });
-    
 })(jQuery);
-
